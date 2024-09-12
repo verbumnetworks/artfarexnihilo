@@ -338,7 +338,7 @@ export default function Home() {
                     <span
                       className={`${inknutAntiqua.className} text-sm text-yellowFar`}
                     >
-                      Nature's Chips
+                      Nature&apos;s Chips
                     </span>
                     <span className="text-xs text-white">Wood Sculpture</span>
                   </div>
