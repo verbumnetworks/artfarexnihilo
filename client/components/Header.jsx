@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { useState } from "react";
-import NavLink from "./navLink";
+import NavLink from "./NavLink";
 import { motion } from "framer-motion";
 
 const links = [
