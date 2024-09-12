@@ -14,7 +14,7 @@ export default function Home() {
           <h1
             className={`${inknutAntiqua.className} text-4xl md:text-5xl tracking-wide font-normal text-center`}
           >
-            Gerald's art Exnihilo
+            Gerald&apos;s art Exnihilo
           </h1>
           <p className="max-w-[450px] text-base font-medium text-center">
             Showing how art responds to faith and reason. Creating immersive
@@ -145,21 +145,21 @@ export default function Home() {
             <div className="w-full flex flex-col justify-between gap-[20px] lg:gap-[30px] px-[30px] sm:px-0 text-center md:text-left">
               {/* Text */}
               <div className="w-full text-base">
-                <strong>ARTFAR</strong>'s mission is to provide a platform where
+                <strong>ARTFAR</strong>&apos;s mission is to provide a platform where
                 the unique language of art is developed through extended
                 analogies that go beyond traditional mediums and processes. The
                 goal is to demonstrate how art engages with the concepts of
                 faith and reason, serving as an evangelical expression of how
-                humans are called to respond to God's grace, inventive skill,
+                humans are called to respond to God&apos;s grace, inventive skill,
                 and creative vision.
               </div>
               {/* Text */}
               <div className="w-full text-base">
-                The acronym <strong>ARTFAR</strong> stands for "Art responds to
-                faith and reason," symbolizing how art reflects the social and
+                The acronym <strong>ARTFAR</strong> stands for &quot;Art responds to
+                faith and reason,&quot; symbolizing how art reflects the social and
                 spiritual dimensions of our shared humanity. It addresses the
                 human need for connection, spiritual growth, and the pursuit of
-                happiness, illustrating art's power to respond to these
+                happiness, illustrating art&apos;s power to respond to these
                 universal desires.
               </div>
             </div>
