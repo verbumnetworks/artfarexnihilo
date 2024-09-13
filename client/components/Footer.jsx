@@ -44,18 +44,18 @@ const Footer = () => {
           </div>
 
           {/* Right */}
-          <div className="w-full flex flex-col gap-[20px] md:gap-[40px]">
+          <div className="w-full flex flex-col gap-[20px]">
             <Link href="#contact">
-              <span className="text-lg font-bold">Contact Us</span>
+              <span className="text-base font-semibold">Contact Us</span>
             </Link>
             <Link href="/">
-              <span className="text-lg font-bold">Terms and Conditions</span>
+              <span className="text-base font-semibold">Terms and Conditions</span>
             </Link>
             <Link href="/">
-              <span className="text-lg font-bold">Privacy Policy</span>
+              <span className="text-base font-semibold">Privacy Policy</span>
             </Link>
             <Link href="/">
-              <span className="text-lg font-bold">Pricing</span>
+              <span className="text-base font-semibold">Pricing</span>
             </Link>
           </div>
         </div>
