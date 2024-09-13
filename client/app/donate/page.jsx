@@ -14,7 +14,9 @@ const DonatePage = () => {
             <span className="text-2xl font-semibold">
               Gerald’s art exnihilo
             </span>
-            <span className={`${inknutAntiqua.className} text-2xl md:text-3xl font-bold`}>
+            <span
+              className={`${inknutAntiqua.className} text-2xl md:text-3xl font-bold`}
+            >
               Your Support Fuels the Art of Tomorrow.
             </span>
           </div>
@@ -52,7 +54,7 @@ const DonatePage = () => {
                 </ul>
                 <div className="w-full">
                   <p className="text-lg font-semibold">
-                    For more information, support and donations, Contact Fr
+                    For more information, support and donations, contact Fr
                     Gerald Isiguzo, OP:
                   </p>
                 </div>
@@ -65,16 +67,15 @@ const DonatePage = () => {
                   {/* Col */}
                   <div className="w-full md:w-[calc(50%-10px)] flex items-center md:items-start gap-[12px]">
                     {/* Icon */}
-                    <LocationOnIcon className="text-3xl" />
+                    <MailOutlineIcon className="text-3xl" />
 
                     {/* Text */}
                     <div className="flex flex-col gap-[10px]">
                       <span className="text-base md:text-sm font-bold">
-                        Location
+                        Email Address
                       </span>
                       <span className="text-base md:text-sm font-normal">
-                        The Presbytery, Ithon Road, Llandrindod Wells, LD1 6AS,
-                        Powys, United Kingdom
+                        artmasters2022@gmail.com
                       </span>
                     </div>
                   </div>
@@ -95,46 +96,11 @@ const DonatePage = () => {
                     </div>
                   </div>
                 </div>
-
-                {/* Row */}
-                <div className="w-full flex flex-col sm:flex-row gap-[20px] md:justify-between">
-                  {/* Col */}
-                  <div className="w-full md:w-[calc(50%-10px)] flex items-center md:items-start gap-[12px]">
-                    {/* Icon */}
-                    <WatchLaterIcon className="text-3xl" />
-
-                    {/* Text */}
-                    <div className="flex flex-col gap-[10px]">
-                      <span className="text-base md:text-sm font-bold">
-                        Availability
-                      </span>
-                      <span className="text-base md:text-sm font-normal">
-                        24/7
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Col */}
-                  <div className="w-full md:w-[calc(50%-10px)] flex items-center md:items-start gap-[12px]">
-                    {/* Icon */}
-                    <MailOutlineIcon className="text-3xl" />
-
-                    {/* Text */}
-                    <div className="flex flex-col gap-[10px]">
-                      <span className="text-base md:text-sm font-bold">
-                        Email Address
-                      </span>
-                      <span className="text-base md:text-sm font-normal">
-                        artmasters2022@gmail.com
-                      </span>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
             {/* Right */}
-            <div className="w-full md:w-[calc(50%-30px)] h-[242px] md:h-[680px] flex justify-center items-center">
+            <div className="w-full md:w-[calc(50%-30px)] h-[242px] md:h-[580px] flex justify-center items-center">
               <div className="w-full h-full overflow-hidden">
                 <img
                   className="w-full h-full object-cover"
