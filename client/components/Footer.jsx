@@ -127,7 +127,7 @@ const Footer = () => {
       <div className="w-full flex flex-col gap-[10px] justify-center items-center text-center text-sm font-bold p-[17px] mt-4 border-t border-solid border-t-[#555555]">
         <span>&copy; Copyright Gerald&apos;s Art Exnihilo.</span>
         <span className="text-xs font-normal">
-          Developed by Verbum Networks Limited, Enugu.
+          Developed by Verbum Networks Limited, Enugu, Nigeria.
         </span>
       </div>
     </div>
