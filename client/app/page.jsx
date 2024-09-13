@@ -3,10 +3,14 @@ import { inknutAntiqua } from "./font";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import WatchLaterIcon from "@mui/icons-material/WatchLater";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 export default function Home() {
   return (
-    <main className="w-full flex flex-col gap-4 overflow-hidden">
+    <main className="w-full flex flex-col gap-2 overflow-hidden">
       {/* Landing */}
       <div className="w-full sm:pt-10 md:pt-16 flex flex-col items-center sm:gap-[40px]">
         {/* Text */}
@@ -145,22 +149,22 @@ export default function Home() {
             <div className="w-full flex flex-col justify-between gap-[20px] lg:gap-[30px] px-[30px] sm:px-0 text-center md:text-left">
               {/* Text */}
               <div className="w-full text-base">
-                <strong>ARTFAR</strong>&apos;s mission is to provide a platform where
-                the unique language of art is developed through extended
+                <strong>ARTFAR</strong>&apos;s mission is to provide a platform
+                where the unique language of art is developed through extended
                 analogies that go beyond traditional mediums and processes. The
                 goal is to demonstrate how art engages with the concepts of
                 faith and reason, serving as an evangelical expression of how
-                humans are called to respond to God&apos;s grace, inventive skill,
-                and creative vision.
+                humans are called to respond to God&apos;s grace, inventive
+                skill, and creative vision.
               </div>
               {/* Text */}
               <div className="w-full text-base">
-                The acronym <strong>ARTFAR</strong> stands for &quot;Art responds to
-                faith and reason,&quot; symbolizing how art reflects the social and
-                spiritual dimensions of our shared humanity. It addresses the
-                human need for connection, spiritual growth, and the pursuit of
-                happiness, illustrating art&apos;s power to respond to these
-                universal desires.
+                The acronym <strong>ARTFAR</strong> stands for &quot;Art
+                responds to faith and reason,&quot; symbolizing how art reflects
+                the social and spiritual dimensions of our shared humanity. It
+                addresses the human need for connection, spiritual growth, and
+                the pursuit of happiness, illustrating art&apos;s power to
+                respond to these universal desires.
               </div>
             </div>
           </div>
@@ -415,6 +419,157 @@ export default function Home() {
                 <ArrowForwardIcon className="text-orangeFar" />
               </span>
             </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Blog */}
+
+      {/* Contact */}
+      <div className="w-full px-0 sm:px-[30px] lg:px-[68px] py-[20px] sm:pt-10 md:pt-12 flex flex-col items-center gap-[30px]">
+        {/* Title */}
+        <div
+          className={`${inknutAntiqua.className} text-xl md:text-2xl font-medium text-center`}
+        >
+          Contact Us
+        </div>
+
+        {/* Content */}
+        <div className="w-full flex flex-col md:flex-row gap-[30px] md:gap-[60px]">
+          {/* Left */}
+          <div className="w-full md:w-[calc(50%-30px)] px-[30px] sm:px-0 flex flex-col gap-[20px] md:gap-[60px]">
+            {/* Title */}
+            <h2
+              className={`${inknutAntiqua.className} w-full text-xl md:text-2xl font-medium text-center md:text-left md:max-w-[566px]`}
+            >
+              Let’s Create Something Beautiful Together
+            </h2>
+
+            {/* Form */}
+            <div className="w-full flex flex-col items-center md:items-start gap-[20px] md:gap-[50px]">
+              {/* FormTitle */}
+              <span className="w-full text-2xl md:text-3xl font-bold text-center md:text-left">
+                Get in Touch
+              </span>
+
+              {/* FormBody */}
+              <div className="w-full flex flex-col gap-[15px] md:gap-[32px]">
+                {/* Fields Container */}
+                <div className="w-full flex flex-col gap-[16px]">
+                  {/* Group */}
+                  <div className="w-full flex flex-col gap-[8px]">
+                    <label
+                      className="text-lg md:text-xl font-semibold"
+                      htmlFor="email"
+                    >
+                      Email Address
+                    </label>
+                    <input
+                      className="w-full text-base font-medium py-[28px] px-[10px] rounded-2xl bg-gray-100"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Input your email"
+                    />
+                  </div>
+
+                  {/* Group */}
+                  <div className="w-full flex flex-col gap-[8px]">
+                    <label
+                      className="text-lg md:text-xl font-semibold"
+                      htmlFor="message"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      className="w-full text-base font-medium py-[28px] px-[10px] rounded-2xl bg-gray-100"
+                      name="message"
+                      id="message"
+                      placeholder="Type your message here"
+                      rows={3}
+                    ></textarea>
+                  </div>
+                </div>
+
+                {/* Button */}
+                <Button className="rounded-full w-full p-8 bg-black">
+                  Send Message
+                </Button>
+              </div>
+            </div>
+
+            {/* Info */}
+            <div className="w-full flex flex-col gap-[20px] md:gap-[60px]">
+              {/* Row */}
+              <div className="w-full flex flex-col sm:flex-row gap-[20px] md:justify-between">
+                {/* Col */}
+                <div className="w-full md:w-[calc(50%-10px)] flex items-center md:items-start gap-[12px]">
+                  {/* Icon */}
+                  <LocationOnIcon className="text-3xl" />
+
+                  {/* Text */}
+                  <div className="flex flex-col gap-[10px]">
+                    <span className="text-base md:text-sm font-bold">Location</span>
+                    <span className="text-base md:text-sm font-normal">
+                      The Presbytery, Ithon Road, Llandrindod Wells, LD1 6AS,
+                      Powys, United Kingdom
+                    </span>
+                  </div>
+                </div>
+
+                {/* Col */}
+                <div className="w-full md:w-[calc(50%-10px)] flex items-center md:items-start gap-[12px]">
+                  {/* Icon */}
+                  <LocalPhoneIcon className="text-3xl" />
+
+                  {/* Text */}
+                  <div className="flex flex-col gap-[10px]">
+                    <span className="text-base md:text-sm font-bold">Cell Phone</span>
+                    <span className="text-base md:text-sm font-normal">+447376459370</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Row */}
+              <div className="w-full flex flex-col sm:flex-row gap-[20px] md:justify-between">
+                {/* Col */}
+                <div className="w-full md:w-[calc(50%-10px)] flex items-center md:items-start gap-[12px]">
+                  {/* Icon */}
+                  <WatchLaterIcon className="text-3xl" />
+
+                  {/* Text */}
+                  <div className="flex flex-col gap-[10px]">
+                    <span className="text-base md:text-sm font-bold">Availability</span>
+                    <span className="text-base md:text-sm font-normal">24/7</span>
+                  </div>
+                </div>
+
+                {/* Col */}
+                <div className="w-full md:w-[calc(50%-10px)] flex items-center md:items-start gap-[12px]">
+                  {/* Icon */}
+                  <MailOutlineIcon className="text-3xl" />
+
+                  {/* Text */}
+                  <div className="flex flex-col gap-[10px]">
+                    <span className="text-base md:text-sm font-bold">Email Address</span>
+                    <span className="text-base md:text-sm font-normal">
+                      artmasters2022@gmail.com
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right */}
+          <div className="w-full md:w-[calc(50%-30px)] h-[242px] md:h-[860px] flex justify-center items-center">
+            <div className="w-full h-full overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src="/imgs/Frame 320.png"
+                alt="writer art"
+              />
+            </div>
           </div>
         </div>
       </div>
