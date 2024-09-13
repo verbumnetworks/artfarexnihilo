@@ -30,16 +30,16 @@ const Footer = () => {
           {/* Left */}
           <div className="w-full flex flex-col gap-[20px] md:gap-[40px]">
             <Link href="/">
-              <span className="text-lg font-bold">Home</span>
+              <span className="text-base font-semibold">Home</span>
             </Link>
             <Link href="#about">
-              <span className="text-lg font-bold">About Us</span>
+              <span className="text-base font-semibold">About Us</span>
             </Link>
             <Link href="#gallery">
-              <span className="text-lg font-bold">Gallery</span>
+              <span className="text-base font-semibold">Gallery</span>
             </Link>
             {/* <Link href="/blog">
-              <span className="text-lg font-bold">Blog</span>
+              <span className="text-base font-semibold">Blog</span>
             </Link> */}
           </div>
 
