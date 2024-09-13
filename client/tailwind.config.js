@@ -20,6 +20,9 @@ module.exports = {
       xl: "1200px",
     },
     extend: {
+      backgroundImage: {
+        'frame-6': "url('/imgs/Frame 6.png')",
+      },
       colors: {
         yellowFar: "#F4EA35",
         orangeFar: "#E45201",

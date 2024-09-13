@@ -27,7 +27,10 @@ export default function Home() {
         </div>
 
         {/* Banner */}
-        <HeroImageArt />
+        {/* <HeroImageArt /> */}
+        <div className="w-full">
+          <img className="w-full" src="/imgs/artfar.png" alt="banner" />
+        </div>
       </div>
 
       {/* About */}
@@ -226,9 +229,9 @@ export default function Home() {
             <div className="w-full flex flex-col justify-between gap-[20px] lg:gap-[30px] text-center md:text-left">
               {/* Text */}
               <div className="w-full text-base">
-                Our Founder is a Nigerian Dominican priest Gerald Isiguzo OP, a
-                visual artist, and currently a graduate student of Swansea
-                College of Art and Design, whose vision is to create an
+                Our Founder is a Nigerian Dominican priest, Rev. Fr. Gerald
+                Isiguzo OP, a visual artist, and currently a graduate student of
+                Swansea College of Art and Design, whose vision is to create an
                 immersive experience for audience participation and
                 intercultural dialogues through art, music, and theology.
               </div>
