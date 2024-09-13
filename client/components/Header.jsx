@@ -9,9 +9,9 @@ import { motion } from "framer-motion";
 
 const links = [
   { url: "/", text: "Home" },
-  { url: "/about", text: "About us" },
-  { url: "/gallery", text: "Gallery" },
-  { url: "/blog", text: "Blog" },
+  { url: "#about", text: "About us" },
+  { url: "#gallery", text: "Gallery" },
+  // { url: "/blog", text: "Blog" },
 ];
 
 const Header = () => {
@@ -87,7 +87,7 @@ const Header = () => {
 
       {/* Utils */}
       <div className="hidden lg:flex w-1/3 min-w-max gap-3 justify-center md:justify-end items-center capitalize">
-        <Link href="/contact">
+        <Link href="#contact">
           <span className="text-2xl md:text-base">Contact us</span>
         </Link>
         <div className="bg-black w-[2px] h-[38px]"></div>
@@ -132,14 +132,15 @@ const Header = () => {
                 variants={listItemVariants}
                 className=""
                 key={link.text}
+                onClick={() => setOpen((prev) => !prev)}
               >
                 <Link href={link.url}>{link.text}</Link>
               </motion.div>
             ))}
-            <motion.div variants={listItemVariants} className="">
-              <Link href="/contact">Contact us</Link>
+            <motion.div variants={listItemVariants} className="" onClick={() => setOpen((prev) => !prev)}>
+              <Link href="#contact">Contact us</Link>
             </motion.div>
-            <motion.div variants={listItemVariants} className="">
+            <motion.div variants={listItemVariants} className="" onClick={() => setOpen((prev) => !prev)}>
               <Link href="/donate">
                 <Button className="rounded-full sm:text-2xl">Make Donation</Button>
               </Link>

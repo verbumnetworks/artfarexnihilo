@@ -2,7 +2,7 @@ import HeroImageArt from "@/components/HeroImageArt";
 import { inknutAntiqua } from "./font";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+// import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import WatchLaterIcon from "@mui/icons-material/WatchLater";
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="w-full flex flex-col gap-2 overflow-hidden">
       {/* Landing */}
-      <div className="w-full sm:pt-10 md:pt-16 flex flex-col items-center sm:gap-[40px]">
+      <div className="w-full pt-4 sm:pt-10 md:pt-16 flex flex-col items-center sm:gap-[40px]">
         {/* Text */}
         <div className="w-full flex gap-[18px] p-8 flex-col justify-center items-center">
           <h1
@@ -31,7 +31,10 @@ export default function Home() {
       </div>
 
       {/* About */}
-      <div className="w-full px-0 sm:px-[30px] lg:px-[68px] py-[20px] sm:pt-10 md:pt-16 flex flex-col items-center gap-[30px]">
+      <div
+        id="about"
+        className="w-full px-0 sm:px-[30px] lg:px-[68px] py-[20px] sm:pt-10 md:pt-16 flex flex-col items-center gap-[30px]"
+      >
         {/* Title */}
         <div
           className={`${inknutAntiqua.className} text-xl md:text-2xl font-medium text-center`}
@@ -85,8 +88,13 @@ export default function Home() {
             <div className="w-full h-[auto] sm:w-[calc(50%-5px)] flex flex-col justify-between gap-[20px] sm:gap-[10px]">
               <div className="w-full h-[350px] sm:h-[auto] overflow-hidden">
                 <img
-                  className="w-full h-full object-cover"
-                  src="/imgs/gerald.jpg"
+                  className="hidden md:block w-full h-full object-cover"
+                  src="/imgs/gerald2.jpg"
+                  alt="art"
+                />
+                <img
+                  className="md:hidden w-full h-full object-cover"
+                  src="/imgs/gerald2_01.jpg"
                   alt="art"
                 />
               </div>
@@ -218,13 +226,11 @@ export default function Home() {
             <div className="w-full flex flex-col justify-between gap-[20px] lg:gap-[30px] text-center md:text-left">
               {/* Text */}
               <div className="w-full text-base">
-                The acronym <strong>ARTFAR</strong> is a conceptual metaphor for
-                exploring how “Art responds to faith and reason” in ways that
-                highlights the social and spiritual conditions of our common
-                humanity and also responds to the needs of human person as a
-                social and religious being who constantly yarn for social
-                connections, spiritual upliftment and consummate pleasure or
-                happiness.
+                Our Founder is a Nigerian Dominican priest Gerald Isiguzo OP, a
+                visual artist, and currently a graduate student of Swansea
+                College of Art and Design, whose vision is to create an
+                immersive experience for audience participation and
+                intercultural dialogues through art, music, and theology.
               </div>
               {/* Text */}
               <div className="w-full text-base">
@@ -237,7 +243,7 @@ export default function Home() {
                 happiness.
               </div>
               {/* Text */}
-              <div className="w-full text-base">
+              {/* <div className="w-full text-base">
                 The acronym <strong>ARTFAR</strong> is a conceptual metaphor for
                 exploring how “Art responds to faith and reason” in ways that
                 highlights the social and spiritual conditions of our common
@@ -245,7 +251,7 @@ export default function Home() {
                 social and religious being who constantly yarn for social
                 connections, spiritual upliftment and consummate pleasure or
                 happiness.
-              </div>
+              </div> */}
             </div>
 
             {/* Button */}
@@ -259,7 +265,10 @@ export default function Home() {
       </div>
 
       {/* Gallery */}
-      <div className="w-full px-0 sm:px-[30px] lg:px-[68px] py-[20px] sm:pt-10 md:pt-16 flex flex-col items-center gap-[30px]">
+      <div
+        id="gallery"
+        className="w-full px-0 sm:px-[30px] lg:px-[68px] py-[20px] sm:pt-10 md:pt-16 flex flex-col items-center gap-[30px]"
+      >
         {/* Title */}
         <div
           className={`${inknutAntiqua.className} text-xl md:text-2xl font-medium text-center`}
@@ -271,10 +280,10 @@ export default function Home() {
         <div className="w-full flex flex-col gap-[10px] md:gap-[30px]">
           {/* Top */}
           <div className="w-full relative">
-            <div className="w-full h-[200px] md:h-[290px] overflow-hidden">
+            <div className="w-full h-[200px] md:h-[290px] overflow-hidden cursor-pointer">
               <img
-                className="w-full h-full object-cover"
-                src="/imgs/matthew-tenbruggencate-oZVbsRE99rg-unsplash.jpg"
+                className="w-full h-full object-cover transform transition-transform duration-500 ease-in-out hover:scale-110"
+                src="/imgs/art5_01.jpg"
                 alt="art"
               />
             </div>
@@ -282,7 +291,7 @@ export default function Home() {
               <span
                 className={`${inknutAntiqua.className} text-sm text-yellowFar`}
               >
-                Ntonku Bando
+                Madonna
               </span>
               <span className="text-xs text-white">Sculpture</span>
             </div>
@@ -294,10 +303,10 @@ export default function Home() {
             <div className="w-full md:h-[500px] md:w-[calc(50%-5px)] flex flex-col-reverse md:flex-row gap-[10px]">
               {/* Full */}
               <div className="relative w-full h-full md:w-[calc(50%-5px)]">
-                <div className="w-full h-[250px] md:h-full overflow-hidden">
+                <div className="w-full h-[250px] md:h-full overflow-hidden cursor-pointer">
                   <img
-                    className="w-full h-full object-cover"
-                    src="/imgs/art-institute-of-chicago-a1_FBTLuvU4-unsplash.jpg"
+                    className="w-full h-full object-cover transform transition-transform duration-500 ease-in-out hover:scale-110"
+                    src="/imgs/art1.jpg"
                     alt="art"
                   />
                 </div>
@@ -305,19 +314,19 @@ export default function Home() {
                   <span
                     className={`${inknutAntiqua.className} text-sm text-yellowFar`}
                   >
-                    Whispers of the Horizon
+                    Tin Bursts
                   </span>
-                  <span className="text-xs text-white">Landscape Painting</span>
+                  <span className="text-xs text-white">Crafts</span>
                 </div>
               </div>
 
               {/* Halves */}
               <div className="w-full h-[250px] md:h-full md:w-[calc(50%-5px)] flex md:flex-col gap-[10px]">
                 <div className="relative h-full md:h-[calc(60%-5px)] w-full">
-                  <div className="w-full h-full md:h-full overflow-hidden">
+                  <div className="w-full h-full md:h-full overflow-hidden cursor-pointer">
                     <img
-                      className="w-full h-full object-cover"
-                      src="/imgs/fons-heijnsbroek-abstract-art-RUbFWQg5zVE-unsplash.jpg"
+                      className="w-full h-full object-cover transform transition-transform duration-500 ease-in-out hover:scale-110"
+                      src="/imgs/art2.jpg"
                       alt="art"
                     />
                   </div>
@@ -325,16 +334,16 @@ export default function Home() {
                     <span
                       className={`${inknutAntiqua.className} text-sm text-yellowFar`}
                     >
-                      Rhythms of Chaos
+                      The Head
                     </span>
-                    <span className="text-xs text-white">Oil Painting</span>
+                    <span className="text-xs text-white">Sculpture</span>
                   </div>
                 </div>
                 <div className="relative h-full md:h-[calc(40%-5px)] w-full">
-                  <div className="w-full h-full md:h-full overflow-hidden">
+                  <div className="w-full h-full md:h-full overflow-hidden cursor-pointer">
                     <img
-                      className="w-full h-full object-cover"
-                      src="/imgs/matt-richmond-xG2VoUaUoBg-unsplash.jpg"
+                      className="w-full h-full object-cover transform transition-transform duration-500 ease-in-out hover:scale-110"
+                      src="/imgs/art8.jpg"
                       alt="art"
                     />
                   </div>
@@ -344,7 +353,7 @@ export default function Home() {
                     >
                       Nature&apos;s Chips
                     </span>
-                    <span className="text-xs text-white">Wood Sculpture</span>
+                    <span className="text-xs text-white">Sculpture</span>
                   </div>
                 </div>
               </div>
@@ -354,10 +363,15 @@ export default function Home() {
             <div className="w-full md:h-[500px] md:w-[calc(50%-5px)] flex flex-col-reverse md:flex-row gap-[10px]">
               {/* Full */}
               <div className="relative w-full h-full md:w-[calc(50%-5px)]">
-                <div className="w-full h-[250px] md:h-full overflow-hidden">
+                <div className="w-full h-[250px] md:h-full overflow-hidden cursor-pointer">
                   <img
-                    className="w-full h-full object-cover"
-                    src="/imgs/tungsten-rising-e7Mj-m5jOXo-unsplash.jpg"
+                    className="hidden md:block w-full h-full object-cover transform transition-transform duration-500 ease-in-out hover:scale-110"
+                    src="/imgs/art7.jpg"
+                    alt="art"
+                  />
+                  <img
+                    className="md:hidden w-full h-full object-cover transform transition-transform duration-500 ease-in-out hover:scale-110"
+                    src="/imgs/art7_01.jpg"
                     alt="art"
                   />
                 </div>
@@ -367,17 +381,17 @@ export default function Home() {
                   >
                     Silent Strength
                   </span>
-                  <span className="text-xs text-white">Sculpture</span>
+                  <span className="text-xs text-white">Painting</span>
                 </div>
               </div>
 
               {/* Halves */}
               <div className="w-full h-[250px] md:h-full md:w-[calc(50%-5px)] flex md:flex-col gap-[10px]">
                 <div className="relative h-full md:h-[calc(40%-5px)] w-full">
-                  <div className="w-full h-full md:h-full overflow-hidden">
+                  <div className="w-full h-full md:h-full overflow-hidden cursor-pointer">
                     <img
-                      className="w-full h-full object-cover"
-                      src="/imgs/catherine-kay-greenup-gTQP1soszNc-unsplash.jpg"
+                      className="w-full h-full object-cover transform transition-transform duration-500 ease-in-out hover:scale-110"
+                      src="/imgs/art6.jpg"
                       alt="art"
                     />
                   </div>
@@ -391,10 +405,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="relative h-full md:h-[calc(60%-5px)] w-full">
-                  <div className="w-full h-full md:h-full overflow-hidden">
+                  <div className="w-full h-full md:h-full overflow-hidden cursor-pointer">
                     <img
-                      className="w-full h-full object-cover"
-                      src="/imgs/birmingham-museums-trust-0xa0OVutd_A-unsplash.jpg"
+                      className="w-full h-full object-cover transform transition-transform duration-500 ease-in-out hover:scale-110"
+                      src="/imgs/art3.jpg"
                       alt="art"
                     />
                   </div>
@@ -402,7 +416,7 @@ export default function Home() {
                     <span
                       className={`${inknutAntiqua.className} text-sm text-yellowFar`}
                     >
-                      Depths Unveiled
+                      Joy Unveiled
                     </span>
                     <span className="text-xs text-white">Illustration</span>
                   </div>
@@ -412,21 +426,24 @@ export default function Home() {
           </div>
 
           {/* More Link */}
-          <div className="w-full px-[30px] sm:px-0 flex justify-end">
+          {/* <div className="w-full px-[30px] sm:px-0 flex justify-end">
             <Link href="/gallery">
               <span className="flex justify-center items-center gap-[8px] capitalize text-base md:text-lg text-gray-800 font-semibold py-[12px] px-[8px] border-b-2 border-orangeFar">
                 View more art
                 <ArrowForwardIcon className="text-orangeFar" />
               </span>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Blog */}
 
       {/* Contact */}
-      <div className="w-full px-0 sm:px-[30px] lg:px-[68px] py-[20px] sm:pt-10 md:pt-12 flex flex-col items-center gap-[30px]">
+      <div
+        id="contact"
+        className="w-full px-0 sm:px-[30px] lg:px-[68px] py-[20px] sm:pt-10 md:pt-12 flex flex-col items-center gap-[30px]"
+      >
         {/* Title */}
         <div
           className={`${inknutAntiqua.className} text-xl md:text-2xl font-medium text-center`}
@@ -509,7 +526,9 @@ export default function Home() {
 
                   {/* Text */}
                   <div className="flex flex-col gap-[10px]">
-                    <span className="text-base md:text-sm font-bold">Location</span>
+                    <span className="text-base md:text-sm font-bold">
+                      Location
+                    </span>
                     <span className="text-base md:text-sm font-normal">
                       The Presbytery, Ithon Road, Llandrindod Wells, LD1 6AS,
                       Powys, United Kingdom
@@ -524,8 +543,12 @@ export default function Home() {
 
                   {/* Text */}
                   <div className="flex flex-col gap-[10px]">
-                    <span className="text-base md:text-sm font-bold">Cell Phone</span>
-                    <span className="text-base md:text-sm font-normal">+447376459370</span>
+                    <span className="text-base md:text-sm font-bold">
+                      Cell Phone
+                    </span>
+                    <span className="text-base md:text-sm font-normal">
+                      +447376459370
+                    </span>
                   </div>
                 </div>
               </div>
@@ -539,8 +562,12 @@ export default function Home() {
 
                   {/* Text */}
                   <div className="flex flex-col gap-[10px]">
-                    <span className="text-base md:text-sm font-bold">Availability</span>
-                    <span className="text-base md:text-sm font-normal">24/7</span>
+                    <span className="text-base md:text-sm font-bold">
+                      Availability
+                    </span>
+                    <span className="text-base md:text-sm font-normal">
+                      24/7
+                    </span>
                   </div>
                 </div>
 
@@ -551,7 +578,9 @@ export default function Home() {
 
                   {/* Text */}
                   <div className="flex flex-col gap-[10px]">
-                    <span className="text-base md:text-sm font-bold">Email Address</span>
+                    <span className="text-base md:text-sm font-bold">
+                      Email Address
+                    </span>
                     <span className="text-base md:text-sm font-normal">
                       artmasters2022@gmail.com
                     </span>

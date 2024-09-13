@@ -30,29 +30,29 @@ const Footer = () => {
             <Link href="/">
               <span className="text-lg font-bold">Home</span>
             </Link>
-            <Link href="/about">
+            <Link href="#about">
               <span className="text-lg font-bold">About Us</span>
             </Link>
-            <Link href="/gallery">
+            <Link href="#gallery">
               <span className="text-lg font-bold">Gallery</span>
             </Link>
-            <Link href="/blog">
+            {/* <Link href="/blog">
               <span className="text-lg font-bold">Blog</span>
-            </Link>
+            </Link> */}
           </div>
 
           {/* Right */}
           <div className="w-full flex flex-col gap-[20px] md:gap-[40px]">
-            <Link href="/contact">
+            <Link href="#contact">
               <span className="text-lg font-bold">Contact Us</span>
             </Link>
-            <Link href="/terms_and_conditions">
+            <Link href="/">
               <span className="text-lg font-bold">Terms and Conditions</span>
             </Link>
-            <Link href="/privacy_policy">
+            <Link href="/">
               <span className="text-lg font-bold">Privacy Policy</span>
             </Link>
-            <Link href="/pricing">
+            <Link href="/">
               <span className="text-lg font-bold">Pricing</span>
             </Link>
           </div>
@@ -68,7 +68,7 @@ const Footer = () => {
             {/* Icons */}
             <div className="w-full flex items-center justify-center sm:justify-start md:justify-center gap-[16px]">
               <a className="block w-[32px] h-[32px]" href="https://facebook.com">
-                <img className="w-full h-full" src="/imgs/facebook.png" alt="facebook logo" />
+                <img className="w-full h-full" src="/imgs/Facebook.png" alt="facebook logo" />
               </a>
               <a className="block w-[32px] h-[32px]" href="https://instagram.com">
                 <img className="w-full h-full" src="/imgs/instagram.png" alt="instagram logo" />
@@ -77,7 +77,7 @@ const Footer = () => {
                 <img className="w-full h-full" src="/imgs/twitter.png" alt="twitter logo" />
               </a>
               <a className="block w-[32px] h-[32px]" href="https://linkedin.com">
-                <img className="w-full h-full" src="/imgs/linkedIn.png" alt="linkedIn logo" />
+                <img className="w-full h-full" src="/imgs/linkedin.png" alt="linkedIn logo" />
               </a>
             </div>
           </div>
