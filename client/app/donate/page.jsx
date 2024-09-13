@@ -11,10 +11,10 @@ const DonatePage = () => {
       <div className="w-full pt-10 md:pt-16 flex flex-col items-center sm:gap-[40px]">
         <div className="w-full h-[350px] bg-frame-6 bg-cover bg-center flex justify-center items-center">
           <div className="w-full flex flex-col justify-center items-center gap-[24px] p-4 text-white text-center">
-            <span className="text-4xl font-semibold">
+            <span className="text-2xl font-semibold">
               Gerald’s art exnihilo
             </span>
-            <span className={`${inknutAntiqua.className} text-4xl font-bold`}>
+            <span className={`${inknutAntiqua.className} text-2xl md:text-3xl font-bold`}>
               Your Support Fuels the Art of Tomorrow.
             </span>
           </div>
